@@ -48,7 +48,7 @@ class CadresAdmin(admin.ModelAdmin):
     search_fields = ['name', 'position']
 
 
-admin.site.site_title = '教务系统（极简版本）'
+admin.site.site_title = '教务系统（极简）'
 admin.site.site_header = '18级网络工程2班'
 
 
