@@ -25,7 +25,7 @@ SECRET_KEY = 'p-j+5r2e^agt9^+&s0oq%)hag7sn1i%cmx#c#k+6pvj$hiu&1n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -123,5 +123,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT  = os.path.join(BASE_DIR, '/static/')#指定样式收集目录
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR,'static'),
+    )
 
 AUTH_USER_MODEL = 'student.Student'

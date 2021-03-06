@@ -11,7 +11,7 @@ class StudentAdmin(UserAdmin):
             user = request.user.username
             name = self.model.objects.get(pk=obj.pk).name
             # person = form.cleaned_data['person'].name
-            f = open('e://jiaowuxitong.txt', 'a')
+            f = open('/data/wwwroot/jiaowuxitong.txt', 'a')
             # f.write(person+'职位:'+job+',被'+user+'修改'+'\r\n')
             f.write('学生信息,学生:'+name+'被'+user+'修改'+'\r\n')
             f.close()
